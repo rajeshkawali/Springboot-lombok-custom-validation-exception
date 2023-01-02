@@ -45,7 +45,6 @@ public class PersonRepositoryImpl implements PersonRepository {
         String _function = ".savePerson";
         log.info(CLASS_NAME + _function + "::ENTER");
         com.rajeshkawali.entity.Person entityPerson = null;
-        //BeanUtils.copyProperties(person,entityPerson);
         entityPerson = modelMapper.map(person,com.rajeshkawali.entity.Person.class);
         log.info(CLASS_NAME + _function + "::entityPerson: {}", entityPerson);
         entityManager.persist(entityPerson);

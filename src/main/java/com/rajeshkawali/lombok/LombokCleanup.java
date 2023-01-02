@@ -6,6 +6,9 @@ import lombok.Synchronized;
 
 import java.io.*;
 
+/**
+ * @author Rajesh_Kawali
+ */
 public class LombokCleanup {
     public static void main(String[] args) throws IOException {
 

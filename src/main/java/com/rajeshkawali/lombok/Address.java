@@ -2,6 +2,9 @@ package com.rajeshkawali.lombok;
 
 import lombok.*;
 
+/**
+ * @author Rajesh_Kawali
+ */
 @ToString(includeFieldNames = false) // includeFieldNames = false --> field name will not add while printing the object
 @EqualsAndHashCode
 @Getter
