@@ -39,7 +39,15 @@ public class LombokMain {
         actor.setTags(Arrays.asList("software developer","UI developer"));
         log.info("Actor Details are: {}", actor);
         log.info("-----------------------------------");
-        Actor actor2 = Actor.builder().clearTags().build(); // clearTags() --> added by @Singular annotation
+        Actor.ActorBuilder actorBuilder = Actor.builder();
+        actorBuilder.adderFirstName("Laksh");
+        //actorBuilder.adderSurname("Kawali"); // Not available in builder
+        actorBuilder.adderGender("Male");
+        actorBuilder.adderTag("Manager"); // This will allow to add single value to list --> added by @Singular annotation
+        //actorBuilder.clearTags(); // This will clear the List --> added by @Singular annotation
+        actorBuilder.adderTags(Arrays.asList("software developer","UI developer"));
+        Actor actor2 = actorBuilder.build();
+        actor2.setSurname("Kawali");
         log.info("Actor Details are: {}", actor);
         log.info("Actor two Details are: {}", actor2);
     }

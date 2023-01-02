@@ -23,7 +23,7 @@ public class Actor extends ActorSuper {
 }
 
 @Data
-@SuperBuilder
+@SuperBuilder(setterPrefix = "adder")
 class ActorSuper {
     private String firstName;
     private String gender;
