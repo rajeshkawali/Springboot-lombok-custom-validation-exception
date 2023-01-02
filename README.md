@@ -23,14 +23,20 @@ To access H2 DB console
 
 ### API's and sample json message
 Person Api:
+
 > POST http://localhost:8585/api/savePerson
+
 > GET http://localhost:8585/api/getAllPerson
+
 > GET http://localhost:8585/api/findByPersonId/1
 
 
 Employee Api:
+
 > POST http://localhost:8585/api/addEmployee
+
 > GET http://localhost:8585/api/getAllEmployee
+
 > GET http://localhost:8585/api/findByEmployeeId/1
 
 Person Message:
