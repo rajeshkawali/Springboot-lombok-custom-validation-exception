@@ -21,7 +21,7 @@ public class LombokMain {
         User user = User.builder()
                 .id(1L)
                 .age(24)
-                //.role("Sr.Software Engineer")
+                //.role("Sr.Software Engineer") // We have given this field as @Getter(lazy = true)
                 .gender("Male")
                 .firstName("Keshav")
                 .lastName("Koli")
